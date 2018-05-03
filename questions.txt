@@ -1,0 +1,4 @@
+0. The board is declared to be int board[DIM_MAX][DIM_MAX]; where DIM_MIN and DIM_MAX is declared to be 3 and 9 respectively. Hence, the dimentions row x column can be anything from 3 x 3 to 9 x 9 apart from 4 x 4.
+1. int board[DIM_MAX][DIM_MAX]; yields to the data structure in the boards game is represented by a 2 dimentional integer array.
+2. The greet function (void greet(void)) is called to greet the player at the start of game
+3. I need to implement void init(void); void draw(void); bool move(int tile); bool won(void);
