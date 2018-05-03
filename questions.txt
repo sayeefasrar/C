@@ -1,0 +1,7 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis is the largest word existing in the dictionary provided in line 95138.
+1.  getrusage usally does get te resource usage according to the man page.
+2.  There are 16 variable members to the struct rusage.
+3.  We pass before & after by reference because it will be less time consuming. Passing by data, which will copy the values of each members of the struct will be time consuming.
+4.  speller.c first checks for the correct command line arguement. char* dictionary = (argc == 3) ? argv[1] : DICTIONARY; checks for if the dictionary is provided to check otherwise it gets the value defined by #define DICTIONARY. In the for loop, it  checks for word, character by character using fgetc. Once it reaches to the end of file the word is counted. Through this process, if it encounters any apostrophe ('), it is also included to the word. If any words' index gets greater than the defined maximum length of word which is 45, then it is ignored as a word. It also ignores words consisting numeric digits. 
+5.  fscanf cannot omit the alphanumeric words in the count where as fgetc can do it as well as other punctuations apart apostrophe (')
+6.  The parameters for check and load are declared as const so that our function cannot change the contents at those pointer it is pointing to
